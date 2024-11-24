@@ -26,9 +26,7 @@ class CacheSet
     {
         Console.Write($"Set {setIndex}");
         foreach (Cell? cell in Cells)
-            Console.Write(
-                $" | 0x{cell?.Tag.ToString("x")} {cell?.CountUsed} {cell?.LastIterationUsed}"
-            );
+            Console.Write($" | 0x{cell?.Tag.ToString("x")}");
         Console.WriteLine();
     }
 }
