@@ -2,6 +2,16 @@
 
 Simple simulator that allows you to enter hex-prefixed address queries and view cache state.
 
+## Run the project
+
+First, you need to [download .NET](https://dotnet.microsoft.com/en-us/download). Open project repository and run the following command:
+
+```
+dotnet run
+```
+
+Now enter addresses (in `0x<hex-number>` format). Press enter to query, `Ctrl + C` to end program.
+
 ## Parameters
 
 All parameters are located in [Program.cs](/Program.cs):
