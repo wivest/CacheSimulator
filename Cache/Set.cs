@@ -18,13 +18,8 @@ class CacheSet
 
     public void Remember(int tag, int iteration)
     {
-        (int index, int count, int iter) = selector.Select(Cells, tag, iteration);
-        Cells[index] = new Cell
-        {
-            Tag = tag,
-            LastIterationUsed = iter,
-            CountUsed = count + 1
-        };
+        (int index, Cell cell) = selector.Select(Cells, tag, iteration);
+        Cells[index] = cell;
     }
 
     public void Print(int setIndex)
